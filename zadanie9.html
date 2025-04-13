@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 9 – Suma ciągu geometrycznego</title>
+</head>
+    <body>
+
+
+    <script>
+        function sumaCiaguGeometrycznego(a, r, n) {
+        if (r === 1) {
+            return a * n;
+        } else {
+            return a * (1 - Math.pow(r, n)) / (1 - r);
+        }
+        }
+
+        console.log("Suma ciągu geometrycznego:", sumaCiaguGeometrycznego(2, 3, 4));
+    </script>
+
+    </body>
+</html>

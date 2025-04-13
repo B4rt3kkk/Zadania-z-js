@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 10 – Liczba Armstronga</title>
+</head>
+    <body>
+
+    <script>
+
+        function czyArmstrong(n) {
+        const cyfry = n.toString().split('');
+        const suma = cyfry.reduce((acc, cyfra) => acc + Math.pow(Number(cyfra), cyfry.length), 0);
+        return suma === n;
+        }
+
+
+        console.log("Czy 153 to liczba Armstronga?", czyArmstrong(153));
+        console.log("Czy 123 to liczba Armstronga?", czyArmstrong(123)); 
+
+    </script>
+
+    </body>
+</html>
